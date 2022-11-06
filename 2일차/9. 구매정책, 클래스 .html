@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>즐거운 금요일</title>
+    <script src="https://kit.fontawesome.com/19689128f2.js" crossorigin="anonymous"></script>
+     <style>
+        /* 폰트어썸 코드 */
+        body{
+            height: 10000px;
+        }
+
+    .cls001{
+        /* 클래스는 .(온점)으로 표현한다  클래스 선택자*/
+            width:150px;
+            height:150px;
+            border:2px solid red;
+            border-radius: 35px 45px 40px 25px;
+            /* width,height 에 반값으로 radius를 주면 정원이 된다 150이면 75  radius의 값을 4개 줬을때는 왼쪽 위부터 시계방향으로 값이 들어간다*/
+        }
+        /* body의 길이 */
+    .circle {
+        width: 45px;
+        height: 45px;
+        border: 2px solid dodgerblue;
+        border-radius: 50%;
+        position: fixed;
+        /* fixed-스크롤을 계속해도 가만히 있다  absolute-스크롤해도 따라오지 않는다*/
+        right: 50px;
+        bottom: 50px;
+        /* 브라우저를 기준으로 오른쪽에서 50px 아래서 50xp 위치를 잡은것*/
+
+    }
+    i{
+        position: absolute;
+         /* fixed도 기준이 될 수 있다 */
+
+        font-size: 36px;
+        color: red;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        /* 탑50퍼 레프트50퍼 해도 안된다 왼쪽 모서리 기준이라서 때문에 준 값 아직 안배움 */
+    }
+     </style>
+     <!-- 페이지 내부 스타일 교육때문에 잘 보이라고 하는거지 실무에서는 이렇게 사용 못한다 -->
+</head>
+<body>
+    <h1 class="cls001"><a href="#bbkj01">반품정책</a></h1>
+    <h1 class="cls001"><a href="#bbkj02">교환정책</a></h1>
+    <h1 class="cls001"><a href="#bbkj03">환불정책</a></h1>
+    <h1 class="cls001"><a href="#bbkj04">회원탈퇴</a></h1>
+           <!-- 아이디를 #으로 표현한다-->
+
+    
+    <p id="bbkj01">반품정책 Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Dolorum pariatur dolor 
+        minus laudantium aut dolorem, itaque earum. 
+        Odio inventore, ex provident perferendis, est quia, quibusdam fugit at aliquam magnam possimus!</p>
+    <p id="bbkj02">교환정책 Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Dolorum pariatur dolor 
+        minus laudantium aut dolorem, itaque earum. 
+        Odio inventore, ex provident perferendis, est quia, quibusdam fugit at aliquam magnam possimus!</p>
+    <p id="bbkj03">환불정책 Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Dolorum pariatur dolor 
+        minus laudantium aut dolorem, itaque earum. 
+        Odio inventore, ex provident perferendis, est quia, quibusdam fugit at aliquam magnam possimus!</p>
+    <p id="bbkj04">회원탈퇴 Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Dolorum pariatur dolor 
+        minus laudantium aut dolorem, itaque earum. 
+        Odio inventore, ex provident perferendis, est quia, quibusdam fugit at aliquam magnam possimus!</p>
+         <!-- bbkj는 아무거나 준것 -->
+
+         <div class="circle"><i class="fa-brands fa-apple"></i></div>
+         
+            
+
+
+</body>
+</html>

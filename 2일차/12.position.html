@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+    <style>
+        #wrapper {
+            width: 600px;
+            height: 600px;
+            border: 2px solid black;
+            position: relative;
+            margin: 50px auto;
+        }
+
+        .box1 {
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .box2 {
+            
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        
+        }
+        .box3 {
+          
+            position: absolute;
+            top: 0;
+            right: 0;
+        
+        }
+        .box4 {
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        
+        }
+        .box5 {
+            position: absolute;
+            bottom: 275px;
+            left: 275px;
+        
+        }
+    /* 부모요소인 wrapper의 position이 relative이고 아들요소인 box의 position이 
+    absolute이기 때문에 브라우저가 아닌 wrapper를 기준으로 위치가 정해진다. */
+    .cls002 {
+        width: 50px;
+            height: 50px;
+            background: red;
+    }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="box1 cls002"></div>
+        <div class="box2 cls002"></div>
+        <div class="box3 cls002"></div>
+        <div class="box4 cls002"></div>
+        <div class="box5 cls002"></div>  
+        <!-- 위에 처럼 클래스를 동시에 여러개 줄 수 있다 -->
+    </div>
+
+    
+</body>
+</html>

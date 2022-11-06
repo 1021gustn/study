@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼의 요소</title>
+</head>
+<body>
+    <form action="action.php">
+        <input type="url" placeholder="사이트 입력" required><br><br>
+        <input type="submit"><br><br>
+        <!--굉장히 중요하다 외울것 placeholder-이메일 입력이라고 되있다가 입력하면 사라진다. 
+            required이라는 속성을 쓰면 이메일이나 유알주소를 넣을때 어느정도 잡아준다 ex)@를 입력하세요 URL을 입력하세요-->
+            <textarea name="" id="" cols="30" rows="10"></textarea> 
+            <!-- 텍스트에어리어 부분은 건들이지 말것 오류 날수있음 -->
+            <h1>당신의 성별은?</h1>
+            <input type="radio" name="male">여성 
+            <input type="radio" name="male">남성 <br><br>
+            <!--이름을 같게 설정해줘야 두개가 같이 선택이 안된다 -->
+            <input type="submit"><br><br>
+            <h2>당신의 취미를 2가지 이상 선택해 주세요</h2>
+            <input type="checkbox" name="fishing"> 낚시
+            <input type="checkbox" name="racing"> 레이싱
+            <input type="checkbox" name="tv"> 티비보기
+            <input type="checkbox" name="movie"> 영화
+            <input type="checkbox" name="sport"> 운동<br><br>
+            <input type="submit"><br><br>
+            <input type="password" autocomplete="false">
+            <!-- autocomplete를 false로 설정해놓아야지 아이디를 입력해도 비밀번호를 기억하지 못함 안그러면 아이디만 입력해도 비밀번호 자동입력 -->
+
+
+
+
+
+
+     </form>
+    
+</body>
+</html>

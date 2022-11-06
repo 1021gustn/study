@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니매이션</title>
+    <style>
+        #box {
+            position: absolute;
+            /* 이 상태는 브라우저가 기준 */
+            top: 50px;
+            left: 50px;
+            width: 50px;
+            height: 50px;
+            background: red;
+            animation-name: bhs;
+            /* 애니매이션 이름 아무거나 */
+            animation-duration: 2s;
+            /* 몇초동안 움직일래 */
+            animation-iteration-count: 10;
+            /* 10번 동작하고 멈춤 인피니트로 하면 계속 동작*/
+            animation-direction: alternate;
+            /* alternate-찍고 반대로 nomal-그대로 진행 */
+            animation-timing-function: cubic-bezier(.56,-0.49,.53,1.31);
+                 /* cubic-bezier 구글로 쳐서 속도 맘대로 정하고 카피해서 입력 */
+            
+        }
+        @keyframes bhs {
+            0% {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                
+            }
+            25% {
+                position: absolute;
+                top: 50px;
+                left: 500px;
+
+            }
+            50% {
+                position: absolute;
+                top: 500px;
+                left: 500px;
+
+            }
+            75% {
+                position: absolute;
+                top: 500px;
+                left: 50px;
+
+            }
+            100%{
+                position: absolute;
+                top: 50px;
+                left: 50px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+    
+</body>
+</html>

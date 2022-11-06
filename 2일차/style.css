@@ -1,0 +1,22 @@
+p{
+    font-size: 18px;
+    color:#ff0000;
+    font-family: Arial, Helvetica, sans-serif;
+    /* 폰트를 여러개 준 이유는 어떤 사용자가 폰트를 모르고 지우면 다음 폰트가 나가게끔 하기위해 (대비하기위해) */
+    /* text-decoration: line-through; */
+    /* 라인 시스루 중앙에 선 그어짐 overline은 위에  */
+    background:yellow;
+    font-weight: 800; 
+    /* 글씨의 두깨 */
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+    /* 실무에선 이렇게 안쓴다 코드를 줄이기 위해 */
+    border: 20px solid  gray ;
+    /* 실무에서는 이렇게 사용 dashed-쩜쩜띄워짐 solid-일반적인모양  dotted-동그라미모양 이 3가지는 많이 쓰이니 외우면 좋다 */
+    text-shadow: 4px 4px 5px orangered;
+              /* x축 y축 블러량(부드러운 정도) 컬러값 4가지 수치값을 순서대로 넣는다 (0이면 단위를 안적는다) */
+    box-shadow: 4px 4px 0 red; 
+     /* border부분 shadow준 것          */
+    
+}

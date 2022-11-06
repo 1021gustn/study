@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그레디언트</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background: red;
+            margin: 50px auto;
+            /* background: repeating-radial-gradient(circle, red 0px ,red 20px ,yellow 20px , yellow 40px ); */
+            /* deg-각도 빨간색에서 서서히 노랑색 그라데이션 다양하게 바꿔서 사용가능*/
+            transition: 2s;
+            /* transform이 S초 동안 동작 */
+        }
+        #box:hover {
+            transform: scale(2.0);
+            /* 마우스를 가져다대면 반응 rotate-deg값을 주면 돌아간다 transtormX-px값을 주면 x축으로 이동 skewX-deg 3차원으로 회전 scale-숫자 숫자배만큼 커짐 
+            외울것!! */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+    
+</body>
+</html>

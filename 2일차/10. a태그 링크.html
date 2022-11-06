@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 선택자 사용법</title>
+    <style>
+        #wrapper{
+            width: 1200px;
+            height: 400vh;
+            margin: 0 auto;
+            border: 1px solid black;
+            /* background:url(뽀로로.jpg) no-repeat; */
+            /* 사진을 넣었는데 잘린다 no-repeat-잘린 사진중 하나만 넣겠다*/
+            /* background-size: cover; */
+            /* 잘린 사진을 딱맞게 넣어주는 역할 cover- contain- */
+            /* 백그라운드는 하나만 사용해서 넣는다 여러개 사용시 오류 */
+         }
+        /* 아이디 선택자 */
+         a:link{
+            width: 50px; 
+            height: 50px;
+            border: 2px solid red;
+            padding: 20px;
+            /* 안쪽으로의 여백 -- 바깥쪽의 여백은 margin */
+            display: inline-block;
+            /* inline 에서 block으로 바꿔줌 */
+            margin: 10px;
+            /* 왼쪽위부터 시계 방향으로 적용된다 */
+            text-decoration: none;
+            color: black;
+        }
+        /* 태그 선택자 */
+        a:visited{
+            color: orange;
+            /* 일단 한번 이상 방문했던 링크부분 */
+        }
+        a:hover{
+            text-decoration: underline;
+            /* 마우스를 오버했을때 반응 = 가져다 댔을때 */
+        }
+        a:active{
+            color: red;
+            /* 링크를 클릭하는 순간 */
+        }
+        /*이 순서대로 하지 않으면 안된다 l-v-h-a */
+               
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <a href="http://www.naver.com" target="_blank" >링크1</a>    
+    </div>
+    <!-- div 많이 사용 *wrapper로 예를 들면 네이버 큰틀을 만들었으니 이제 사용 안한다 그러니 한번만 사용하는 아이디 태그를 사용한것 -->
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2DEPTH</title>
+    <style>
+        .cls001 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            /* ul의 앞에 동그라미 없에고 여백을 없앰 ul은 여백을 가지고 태어남 */
+        }
+        .cls001>li 
+        /* ul의 자식요소들을 잡은것    */
+        {
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            /* height와 line-height를 똑같이 주면 세로 방향에 텍스트가 가운데에 위치하고 침범을 못하게 막아준다 중요중요한 테크닉*/
+            border: 1px solid black;
+            text-align: center;
+            float: left;
+            /* 블락이라 한줄씩 먹지만 옆으로 딱 붙여버리는 코드 (아직 안배움)*/
+           
+          }
+         .cls001 li ul
+         /* 위에는 자식요소를 표현(>) 했는데 여기는 왜 안하냐 더 밑에 요소가 없기 때문에 */
+         {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+         } 
+        .cls001 li ul li {
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            display: none;
+            /* 손주뻘을 숨긴것 */
+            margin: -1px;
+
+        } 
+        .cls001 li:hover ul li {
+            display: block;
+            /* hover를 통해 마우스 가져다 대면 나오게 함 */
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="cls001">
+        <!-- 자식요소의 li를 잡기위해 클래스를 준것 -->
+        <li>HTML
+            <ul>
+                <li>HTML1</li>
+                <li>HTML2</li>
+                <li>HTML3</li>
+            </ul>
+        </li>
+        <li>CSS
+            <ul>
+                <li>css1</li>
+                <li>css2</li>
+                <li>css3</li>
+            </ul>
+        </li>
+        <li>javascript
+            <ul>
+                <li>javascript1</li>
+                <li>javascript2</li>
+                <li>javascript3</li>
+            </ul>
+        </li>
+        <li>jQuery
+            <ul>
+                <li>jQuery1</li>
+                <li>jQuery2</li>
+                <li>jQuery3</li>
+            </ul>
+        </li>
+
+        <li>portfolio
+            <ul>
+                <li>portfolio1</li>
+                <li>portfolio2</li>
+                <li>portfolio3</li>
+            </ul>
+        </li>
+    </ul>
+    
+</body>
+</html> 
