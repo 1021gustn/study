@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT</title>
+    <style>
+        #wrapper {
+            width: 1000px;
+            /* height: 100vh; */
+            overflow: hidden;
+            /* 밑부분을 딱 맞춰준다 */
+            margin: 0 auto; 
+            border: 1px solid #333;
+        }
+        header {
+            width: 100%;
+            height: 150px;
+            background: darkcyan;
+        }
+        #logo {
+            width: 150px;
+            height: 80px;
+            float: left;
+            border: 1px solid black;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+        img {
+            width: 150px;
+            height: 80px;
+        }
+        nav {
+            width: 350px;
+            height: 40px;
+            float: right;
+            /* border: 1px solid black; */
+            margin-top: 80px;
+           
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            display: inline-block;
+            margin-right: 15px;
+            /* ul li들을 15px만큼 띄워준것 */
+            background: aqua;
+            color: black;
+            padding: 3px;
+        }
+        #left {
+            float: left;
+            border: 1px solid black;
+            width: 20%;
+            height: 350px;
+
+        }
+        #center {
+            float: left;
+            border: 1px solid black;
+            width:50%;
+            height: 400px;
+            margin-left: 48px;
+            
+        }
+        #right {
+            float: right;
+            border: 1px solid black;
+            width: 20%;
+            height: 350px;
+        }
+        article {
+            width: 100px;
+            height: 110px;
+            background: skyblue;
+            float: left;
+            margin: 12px;
+
+        }
+        footer {
+            clear: both;
+            /* float을 해제 해주는 코드 float를 주면 계속 그쪽으로 가기 때문에 이 코드로 해제 시켜준다 */
+            height: 105px;
+            background: mediumaquamarine;
+            text-align: center;
+            padding-top: 40px;
+            box-sizing: border-box;
+            /* width,height안에 border나 padding을 포함시켜주는 코드 이걸 안하면 패딩 준 만큼 크기가 늘어난다 (105안에 40이 늘어나는것)*/
+
+        }
+        address {
+            font-style: normal;
+            /* 약간 흘김체에서 정상적으로 돌아옴 */
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">
+                <img src="dusdj.jpg" alt="연어">
+            </div>
+            <nav>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JAVASCRIPT</li>
+                  <li>TODOLIST</li>
+               </ul>
+            </nav>
+        </header>
+        <section>
+            <div id="left">
+                <aside>
+
+                </aside>
+            </div>
+            <div id="center">
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+               
+            </div>
+            <!-- 하나의 레이아웃 -->
+            <div id="right">
+                <aside>
+
+                </aside>
+
+            </div>
+            <!-- 하나의 레이아웃 div로 영역을 안나눠주면 이상이 생긴다-->
+            
+        </section>
+        <footer>
+            <address>오늘은 안즐거운 월요일</address>
+        </footer>
+    </div>
+</body>
+</html>
