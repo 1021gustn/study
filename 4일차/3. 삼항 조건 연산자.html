@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼한조건연산자</title>
+    <script>
+        // var a = 10;
+        // var b = 5;
+        // var result = a > b ? "오늘가야될까?" : "그냥 집으로 가자"
+        // //?를 꼭 붙여준다.  a가 b보다 크니까 "오늘가야될까?"가 반환된다
+        // document.write(result);
+
+        var name = prompt("이름이 뭐에요?");
+        // prompt = 질문창을 띄우는 코드
+        var height = prompt("키가 몇이세요?");
+        var weight = prompt("몸무게가 몇이에요?");
+
+        var normal_w = (height - 100) * 0.9;
+        //평균체중  normal_w에 (height -100) * 0.9를 대입한것
+
+        var result = weight >= normal_w - 5 && weight <= normal_w + 5;
+        // 오차범위 +- 5를 준것 &&이니까 둘 다 true여야 한다
+
+        result = result ? "적정 체중 오케이" : "적정 체중 노우"
+        document.write(name + "님은" + result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
