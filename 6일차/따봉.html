@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>따봉</title>
+    <script src="https://kit.fontawesome.com/19689128f2.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    div {
+        font-size: 20px;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        background: aqua;
+    }
+    .reverce {
+        transform: rotatex(180deg);
+    }
+</style>
+
+<body>
+    <div>Click on the icon to toggle between thumbs-up and thumbs-down (like/dislike):</div>
+    <i class="fa-solid fa-thumbs-up cls001" style="font-size: 300px;"
+    onclick="dnd()" id="rne"></i>
+
+    <script>
+        function dnd() {
+            let down = document.getElementById("rne");
+            down.classList.toggle("reverce")
+        }
+          
+
+    
+    </script>
+</body>
+</html>

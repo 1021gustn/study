@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아코디언 메뉴</title>
+    <style>
+        .accordion {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+        .active, .accordion:hover {
+          background-color: #ccc; 
+        }
+        
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+        </style>
+</head>
+<body>
+    <h1>Accordian</h1>
+    <button class="accordion">Section1</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque consequatur fuga laborum nostrum, sequi consectetur excepturi magni ullam amet tempora quod suscipit perferendis ea dolore eveniet maxime quia harum.</p>
+    </div>
+    <button class="accordion">Section2</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque consequatur fuga laborum nostrum, sequi consectetur excepturi magni ullam amet tempora quod suscipit perferendis ea dolore eveniet maxime quia harum.</p>
+    </div>
+    <button class="accordion">Section3</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque consequatur fuga laborum nostrum, sequi consectetur excepturi magni ullam amet tempora quod suscipit perferendis ea dolore eveniet maxime quia harum.</p>
+    </div>
+    <script>
+        let acc = document.getElementsByClassName("accordion");
+        let i;
+
+        for(i=0; i < acc.length; i++) {
+            //length는 갯수를 뜻한다 acc의 갯수는 3개니까 3
+            acc[i].addEventListener("click",function() {
+                //acc i번째를 클릭 했을떄 토글 액티브를 
+                //addEventListener 어제 사용한 온 클릭이랑 약간 다르지만 비슷
+                this.classList.toggle("active");
+                //this라는 인자는 바로 위에 있다
+                //toggle은 active클래스를 붙였다 땠다 하라는것
+                let panel = this.nextElementSibling;
+                //다음 요소들이
+                if(panel.style.display == "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read more</title>
+</head>
+<style>
+    #less {
+        display: none;
+    }
+</style>
+<body>
+    <div>Read More Read Less Button</div>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem incidunt tempora eos asperiores nulla velit quaerat facilis? Placeat quae, recusandae dicta aliquam nesciunt id autem aliquid quisquam veritatis corrupti.Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="less"> Quasi voluptatem incidunt tempora eos asperiores nulla velit quaerat facilis? Placeat quae, recusandae dicta aliquam nesciunt id autem aliquid quisquam veritatis corrupti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem incidunt tempora eos asperiores nulla velit quaerat facilis? Placeat quae, recusandae dicta aliquam nesciunt id autem aliquid quisquam veritatis corrupti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem incidunt tempora eos asperiores nulla velit quaerat facilis? Placeat quae, recusandae dicta aliquam nesciunt id autem aliquid quisquam veritatis corrupti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem incidunt tempora eos asperiores nulla velit quaerat facilis? Placeat quae, recusandae dicta aliquam nesciunt id autem aliquid quisquam veritatis corrupti.</span></p>
+    
+    <button id="btn" onclick="myFunction()">Read More</button>
+
+    <script>
+        let less = document.getElementById("less");
+        // let btn = document.getElementById("btn")
+
+        function myFunction() {
+            
+            if(less.style.display == "none") {
+                less.style.display == "inline";
+            } else {
+                less.style.display == "none"
+            }
+        }
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 넘기기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #gallerZone {
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="gallerZone">
+        <p><img src="imges/pic_1.jpg" alt="1번 이미지" id="photo"></p>
+        <p>
+            <button onclick="gallery(0)">이전</button>
+
+            <button onclick="gallery(1)">다음</button>
+        </p>
+    </div>
+
+    <script>
+        let num = 1;
+        function gallery(direct) {
+            if(direct) {
+                if(num == 8) return;
+                // return 강제종료
+                num++;
+            } else {
+                if(num == 1) return;
+                num--;
+            }
+
+            let imgTag = document.getElementById("photo");
+            imgTag.setAttribute("src","imges/pic_" + num + ".jpg")
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>패스워드 보이게</title>
+</head>
+
+<body>
+    <!-- <div>뭐시기 영어 블라블라~~</div>
+    <form action="act">
+        <input type="password" name="pw" id="pw">
+        <input type="checkbox" name="check" id="check" onclick="check">
+    </form>
+
+    <script>
+        let pw = document.getElementById(pw)
+
+        function check() {
+            if(pw.type == )
+        }
+    </script> -->
+
+    password: <input type="password" value="FakePSW" id="myInput"><br><br>
+    <input type="checkbox" onclick="myFunction()">show password
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("myInput");
+            if(x.type == "password"){
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+  
+</body>
+</html>
