@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쌤 따봉</title>
+    <script src="https://kit.fontawesome.com/19689128f2.js" crossorigin="anonymous"></script>
+    <style>
+        .fa {
+            font-size: 200px;
+            cursor: pointer;
+        }
+        .fa:hover {
+            color: aquamarine;
+        }
+        .active {
+            transform:rotateX(180deg);
+        }
+    </style>
+</head>
+<body>
+    <i class="fa fa-solid fa-thumbs-up cls001" id="icon"></i>
+    <script>
+        let icon = document.getElementById("icon");
+        icon.addEventListener("click",function() {
+            icon.classList.toggle("active");
+        });
+    </script>
+    
+</body>
+</html>

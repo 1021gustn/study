@@ -14,7 +14,7 @@
 <body>
     <div>Read More Read Less Button</div>
     <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem incidunt tempora eos asperiores nulla velit quaerat facilis? Placeat quae, recusandae dicta aliquam nesciunt id autem aliquid quisquam veritatis corrupti.Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="less"> Quasi voluptatem incidunt tempora eos asperiores nulla velit quaerat facilis? Placeat quae, recusandae dicta aliquam nesciunt id autem aliquid quisquam veritatis corrupti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem incidunt tempora eos asperiores nulla velit quaerat facilis? Placeat quae, recusandae dicta aliquam nesciunt id autem aliquid quisquam veritatis corrupti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem incidunt tempora eos asperiores nulla velit quaerat facilis? Placeat quae, recusandae dicta aliquam nesciunt id autem aliquid quisquam veritatis corrupti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem incidunt tempora eos asperiores nulla velit quaerat facilis? Placeat quae, recusandae dicta aliquam nesciunt id autem aliquid quisquam veritatis corrupti.</span></p>
-    
+
     <button id="btn" onclick="myFunction()">Read More</button>
 
     <script>
@@ -22,11 +22,12 @@
         // let btn = document.getElementById("btn")
 
         function myFunction() {
+            let less = document.getElementById("less");
             
             if(less.style.display == "none") {
-                less.style.display == "inline";
+                less.style.display = "inline";
             } else {
-                less.style.display == "none"
+                less.style.display = "none"
             }
         }
 
