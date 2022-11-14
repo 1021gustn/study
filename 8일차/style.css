@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background: url(back.jpg) no-repeat;
+  background-size: cover;
+  /* cover는 화면을 꽉채우지만 세로가 조금 잘릴수 있다.
+    contain은 화면을 다 꽉채우지 못할수 있다 가로가 짧아서 */
+}
+
+.container {
+  background: #fff;
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.task-area {
+  border: 1px solid #ccc;
+}
+
+#task-tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+#task-tabs div {
+  padding: 1em;
+}
+
+#under-line {
+  height: 4px;
+  background-color: dodgerblue;
+  position: absolute;
+  width: 65px;
+  left: 0;
+  top: 52px;
+  padding: 0 !important;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    /* 오른쪽으로 보내버림 버튼을 */
+    padding: 1em;
+
+}
