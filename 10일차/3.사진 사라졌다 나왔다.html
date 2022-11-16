@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <title>Document</title>
+    <!-- <style>
+        body {
+            margin: 0 auto;
+        }
+
+        img {
+            width: 500px;  
+            transition: 2s; 
+            margin-left: 0;       
+       }
+       .hidden , .show {
+        width: 100px;
+        height: 30px;
+        margin-left: 60px;
+       }
+       .active {
+        margin-left: -500px;
+       }
+       .show{
+        margin-left: 0;
+       }
+    </style> -->
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+            line-height: 1;
+            font-family: "Open Sans", sans-serif;
+            font-size: 1em;
+            background: #555;
+            color: #000;
+        }
+        .container .title {
+            margin: 0 0 35px;
+            padding: 0;
+            font-size: 1.5em;
+            font-weight: 300;
+            color: #000;
+        }
+        .gallery {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        button {
+            padding: 5px 15px;
+            background: #eaeaea;
+            color: #666;
+            border: none;
+            cursor: pointer;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-transition: all 0.4s;
+            transition:  1.3s;
+        }
+        button:hover {
+            background: #999;
+            color: #000;
+        }
+        </style>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script>
+            $(function() {
+                $("#hide").click(function() {
+                    $(".gallery").animate({width:"0"},1000);
+                });
+                $("#show").click(function() {
+                    $(".gallery").animate({width:"300px"},1000);
+                });
+            });
+        </script>
+</head>
+<body>
+    <div class="gallery">
+        <img src="star.jpg" alt="별">
+    </div>
+    <button id="hide">ddd</button>
+    <button id="show">zzzz</button>
+
+    <!-- <div class="img">
+        <img src="star.jpg" alt="별">
+    </div>
+    <button class="hidden" id="hiddenBtn">hiddn</button>
+    <button class="show" id="showBtn">show</button>
+    
+    <script>
+        $(function() {
+            $(".hidden").click(function() {
+                $("img").addClass("active");
+            })
+            $(".show").click(function() {
+                $("img").addClass("show");
+            })
+            
+        })
+
+    </script> -->
+</body>
+</html>
